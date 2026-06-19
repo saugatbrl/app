@@ -10,6 +10,18 @@
     <title>Professional Photography Planner</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="manifest" href="/static/manifest.json">
+
+<meta name="theme-color" content="#000000">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="apple-mobile-web-app-title" content="Photography Planner">
+
+<link rel="apple-touch-icon" href="/static/images/icon-192.png">
 </head>
 <body class="{% if report %}{{ report.theme }}{% else %}default{% endif %}">
     <video autoplay muted loop playsinline id="bgVideo">

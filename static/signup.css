@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-side {
+    flex: 1;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url('/static/images/sunset.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.left-side h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+}
+
+.left-side p {
+    font-size: 1.5rem;
+    opacity: 0.95;
+}
+
+/* RIGHT SIDE */
+.right-side {
+    flex: 1;
+
+    background: linear-gradient(
+        135deg,
+        #f6f8fc,
+        #eef2ff
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SIGNUP CARD */
+.signup-card {
+
+    width: 500px;
+    max-width: 90%;
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.18);
+
+    backdrop-filter: blur(10px);
+}
+
+.signup-card h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* INPUTS */
+.signup-card input {
+
+    width: 100%;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #f4f4f4;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.signup-card input:focus {
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(111,0,255,0.2);
+}
+
+/* 3D BUTTON */
+.signup-card button {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: white;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            45deg,
+            #6f00ff,
+            #a64dff
+        );
+
+    box-shadow:
+        0 10px 25px rgba(111,0,255,0.5);
+
+    transition: all 0.3s ease;
+}
+
+.signup-card button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(111,0,255,0.7);
+}
+
+.signup-card button:active {
+
+    transform: translateY(1px);
+}
+
+/* LOGIN LINK */
+.signup-card a {
+
+    display: block;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #6f00ff;
+
+    font-weight: 600;
+}
+
+.signup-card a:hover {
+    text-decoration: underline;
+}
